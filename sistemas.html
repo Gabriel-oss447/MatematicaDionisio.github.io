@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sistemas, Rango y Espacio Nulo</title><link rel="stylesheet" href="sistemas.css"></head>
+<body><div class="fondo"><span>∑</span><span>π</span><span>∫</span><span>√</span><span>∞</span><span>det</span></div>
+<header><nav><a href="index.html" >➕ Operaciones</a><a href="determinantes.html" >📐 Determinantes e Inversa</a><a href="sistemas.html" class=\"on\">🧮 Sistemas y Rango</a></nav><h1>Sistemas, Rango y Espacio Nulo</h1><p class="sub">Paso a paso · Fracciones exactas</p></header><main>
+<section class="card"><h2>Sistema A·x = b</h2><div class="dim"><label>Ecuaciones</label><input id="m" type="number" min="1" max="6" value="3"><label>Incógnitas</label><input id="n" type="number" min="1" max="6" value="3"><button id="btnA" class="sec">Crear</button></div>
+<div class="fila"><div><label>Matriz A</label><div id="gA" class="grid"></div></div><div><label>Vector b</label><div id="gB" class="grid"></div></div></div></section>
+<section class="card"><h2>Escalonada y rango (usa A)</h2><div class="botones"><button data-op="escalonada">Forma escalonada (Gauss)</button><button data-op="reducida">Reducida (Gauss-Jordan)</button><button data-op="rango">Rango</button><button data-op="nucleo">Espacio nulo</button></div></section>
+<section class="card"><h2>Resolver Ax = b</h2><div class="botones"><button data-op="gj">Gauss-Jordan</button><button data-op="cramer">Cramer</button></div></section>
+<section id="salida"></section>
+</main><footer>Calculadora de Matrices · HTML5 + CSS3 + JavaScript</footer><script src="nucleo.js"></script><script src="sistemas.js"></script></body></html>

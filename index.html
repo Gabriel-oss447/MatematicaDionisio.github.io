@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Operaciones con Matrices</title><link rel="stylesheet" href="operaciones.css"></head>
+<body><div class="fondo"><span>∑</span><span>π</span><span>∫</span><span>√</span><span>∞</span><span>det</span></div>
+<header><nav><a href="index.html" class=\"on\">➕ Operaciones</a><a href="determinantes.html" >📐 Determinantes e Inversa</a><a href="sistemas.html" >🧮 Sistemas y Rango</a></nav><h1>Operaciones con Matrices</h1><p class="sub">Paso a paso · Fracciones exactas</p></header><main>
+<section class="card fila">
+<div><h2>Matriz A</h2><div class="dim"><label>Filas</label><input id="fa" type="number" min="1" max="6" value="3"><label>Col.</label><input id="ca" type="number" min="1" max="6" value="3"><button id="btnA" class="sec">Crear</button></div><div id="gA" class="grid"></div></div>
+<div><h2>Matriz B</h2><div class="dim"><label>Filas</label><input id="fb" type="number" min="1" max="6" value="3"><label>Col.</label><input id="cb" type="number" min="1" max="6" value="3"><button id="btnB" class="sec">Crear</button></div><div id="gB" class="grid"></div></div>
+</section>
+<section class="card"><h2>Elige la operación</h2><p class="sub">Acepta enteros, decimales y fracciones (3/4).</p>
+<div class="botones"><button data-op="suma">A + B</button><button data-op="resta">A − B</button><button data-op="mult">A · B</button><button data-op="transpuesta">Aᵀ</button><button data-op="traza">Traza</button></div><br>
+<div class="dim"><label>Escalar k</label><input id="k" value="2"><button data-op="escalar">k · A</button><label>Potencia n</label><input id="n" type="number" value="2" min="0" max="10"><button data-op="potencia">Aⁿ</button></div></section>
+<section id="salida"></section>
+</main><footer>Calculadora de Matrices · HTML5 + CSS3 + JavaScript</footer><script src="nucleo.js"></script><script src="operaciones.js"></script></body></html>
